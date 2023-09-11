@@ -4,11 +4,11 @@ import GhandhiSansBold from './fontes/GandhiSans-Bold.otf'
 
 const EstilosGlobais = createGlobalStyle`
 @font-face {
-  fonf-family: 'GhandhiSansRegular';
+  font-family: 'GhandhiSansRegular';
   src: local('Ghandhi Sans Regular'), local('GhandhiSansRegular'), url(${GhandhiSansRegular});
 }
 @font-face {
-  fonf-family: 'GhandhiSansBold';
+  font-family: 'GhandhiSansBold';
   src: local('Ghandhi Sans Bold'), local('GhandhiSansBold'), url(${GhandhiSansBold});
 }
 
@@ -17,7 +17,7 @@ html {
     -webkit-text-size-adjust: 100%; 
     font-family: GhandhiSansRegular;
   }
-  
+
   body {
     margin: 0;
     min-height: 100vh;
