@@ -1,10 +1,23 @@
 import { createGlobalStyle } from "styled-components";
+import GhandhiSansRegular from './fontes/GandhiSans-Regular.otf'
+import GhandhiSansBold from './fontes/GandhiSans-Bold.otf'
 
 const EstilosGlobais = createGlobalStyle`
+@font-face {
+  fonf-family: 'GhandhiSansRegular';
+  src: local('Ghandhi Sans Regular'), local('GhandhiSansRegular'), url(${GhandhiSansRegular});
+}
+@font-face {
+  fonf-family: 'GhandhiSansBold';
+  src: local('Ghandhi Sans Bold'), local('GhandhiSansBold'), url(${GhandhiSansBold});
+}
+
 html {
     line-height: 1.15; 
     -webkit-text-size-adjust: 100%; 
+    font-family: GhandhiSansRegular;
   }
+  
   body {
     margin: 0;
     min-height: 100vh;
