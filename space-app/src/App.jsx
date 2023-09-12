@@ -2,6 +2,8 @@ import { styled } from "styled-components";
 import EstilosGlobais from "./componentes/EstilosGlobais";
 import BarraLateral from "./componentes/BarraLateral";
 import Cabecalho from "./componentes/Cabecalho";
+import Banner from "./componentes/Banner";
+import bannerBackground from "./assets/banner.png";
 
 const BackgroundGradient = styled.div`
   background: linear-gradient(
@@ -18,8 +20,12 @@ function App() {
   return (
     <BackgroundGradient>
       <EstilosGlobais />
-      <Cabecalho/>
+      <Cabecalho />
       <BarraLateral />
+      <Banner
+        texto="A galeria mais completa de fotos do espaco!"
+        backgroundImage={bannerBackground}
+      />
     </BackgroundGradient>
   );
 }

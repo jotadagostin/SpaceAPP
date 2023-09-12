@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 const FigureEstilizada = styled.figure`
-  background-image: ${(prop) => `url($backgroundImage)`};
+  background-image: ${(props) => `url(${props.$backgroundImage})`};
   flex-grow: 1;
   background-repeat: no-repeat;
   display: flex;
