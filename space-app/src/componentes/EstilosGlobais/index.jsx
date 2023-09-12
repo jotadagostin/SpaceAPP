@@ -1,10 +1,14 @@
 import { createGlobalStyle } from "styled-components";
-import GhandhiSansRegular from './fontes/GandhiSans-Regular.otf'
 import GhandhiSansBold from './fontes/GandhiSans-Bold.otf'
-ont-face {
+import GhandhiSansRegular from './fontes/GandhiSans-Regular.otf'
+
+
+const EstilosGlobais = createGlobalStyle`
+@font-face {
   font-family: 'GhandhiSansRegular';
   src: local('Ghandhi Sans Regular'), local('GhandhiSansRegular'), url(${GhandhiSansRegular});
 }
+
 @font-face {
   font-family: 'GhandhiSansBold';
   src: local('Ghandhi Sans Bold'), local('GhandhiSansBold'), url(${GhandhiSansBold});
@@ -15,8 +19,6 @@ html {
     -webkit-text-size-adjust: 100%; 
     font-family: GhandhiSansRegular;
   }
-const EstilosGlobais = createGlobalStyle`
-@f
 
   body {
     margin: 0;

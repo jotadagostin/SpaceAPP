@@ -3,7 +3,7 @@ import ItemNavegacao from "./ItemNavegacao";
 
 const ListaEstilizada = styled.ul`
   list-style: none;
-  padding: 0;
+  padding: 1;
   margin: 0;
   width: 212px;
 `;
@@ -23,6 +23,21 @@ const BarraLateral = () => {
             iconeAtivo="/icones/mais-vistas-ativo.png"
             iconeInativo="/icones/mais-vistas-inativo.png">
             Mais vistas
+          </ItemNavegacao>
+          <ItemNavegacao
+            iconeAtivo="/icones/mais-curtidas-ativo.png"
+            iconeInativo="/icones/mais-curtidas-inativo.png">
+            Mais Curtidas
+          </ItemNavegacao>
+          <ItemNavegacao
+            iconeAtivo="/icones/novas-ativo.png"
+            iconeInativo="/icones/novas-inativo.png">
+            Novas
+          </ItemNavegacao>
+          <ItemNavegacao
+            iconeAtivo="/icones/surpreenda-me-ativo.png"
+            iconeInativo="/icones/surpreenda-me-inativo.png">
+            Surpreenda-me
           </ItemNavegacao>
         </ListaEstilizada>
       </nav>
