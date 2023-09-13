@@ -4,6 +4,7 @@ import BarraLateral from "./componentes/BarraLateral";
 import Cabecalho from "./componentes/Cabecalho";
 import Banner from "./componentes/Banner";
 import bannerBackground from "./assets/banner.png";
+import Galeria from "./componentes/Galeria";
 
 const BackgroundGradient = styled.div`
   background: linear-gradient(
@@ -16,16 +17,40 @@ const BackgroundGradient = styled.div`
   min-height: 100vh;
 `;
 
+const AppContainer = styled.div`
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+`;
+
+const MainContainer = styled.main`
+  display: flex;
+  gap: 24px;
+`;
+
+const ConteudoGaleria = styled.section`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+`;
+
 function App() {
   return (
     <BackgroundGradient>
       <EstilosGlobais />
-      <Cabecalho />
-      <BarraLateral />
-      <Banner
-        texto="A galeria mais completa de fotos do espaco!"
-        backgroundImage={bannerBackground}
-      />
+      <AppContainer>
+        <Cabecalho />
+        <MainContainer>
+          <BarraLateral />
+          <ConteudoGaleria>
+            <Banner
+              texto="A galeria mais completa de fotos do espaco!"
+              backgroundImage={bannerBackground}
+            />
+            <Galeria />
+          </ConteudoGaleria>
+        </MainContainer>
+      </AppContainer>
     </BackgroundGradient>
   );
 }

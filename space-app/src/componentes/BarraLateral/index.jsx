@@ -3,7 +3,7 @@ import ItemNavegacao from "./ItemNavegacao";
 
 const ListaEstilizada = styled.ul`
   list-style: none;
-  padding: 1;
+  padding: 0;
   margin: 0;
   width: 212px;
 `;
