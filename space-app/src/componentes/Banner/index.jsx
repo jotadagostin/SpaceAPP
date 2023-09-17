@@ -11,6 +11,16 @@ const FigureEstilizada = styled.figure`
   margin: 0;
   border-radius: 20px;
   max-width: 100%;
+
+  @media (min-width: 768px) {
+    /* Estilos para telas a partir de 768px */
+    width: 80%;
+  }
+
+  @media (min-width: 1200px) {
+    /* Estilos para telas a partir de 1200px */
+    width: 90%;
+  }
 `;
 
 const TituloEstilizado = styled.h1`
