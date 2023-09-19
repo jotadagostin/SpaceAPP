@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { styled } from "styled-components";
 import BotaoIcone from "../../BotaoIcone";
 
 const Figure = styled.figure`
@@ -30,6 +30,7 @@ const Figure = styled.figure`
     }
   }
 `;
+
 const Rodape = styled.footer`
   display: flex;
   justify-content: space-between;
@@ -45,13 +46,13 @@ const Imagem = ({ foto, expandida = false }) => {
         <Rodape>
           <h4>{foto.fonte}</h4>
           <BotaoIcone>
-            <img src="/icones/favorito.png" alt="icone de favorito" />
+            <img src="/icones/favorito.png" alt="Icone de favorito" />
           </BotaoIcone>
-          <BotaoIcone>
-            
-            <img src="/icones/expandir.png" alt="icone de expandir" />
-          </BotaoIcone>
-          
+          {!expandida && (
+            <BotaoIcone aria-hidden={expandida}>
+              <img src="/icones/expandir.png" alt="Icone de expandir" />
+            </BotaoIcone>
+          )}
         </Rodape>
       </figcaption>
     </Figure>
