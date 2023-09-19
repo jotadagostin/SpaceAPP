@@ -48,8 +48,10 @@ const Imagem = ({ foto, expandida = false }) => {
             <img src="/icones/favorito.png" alt="icone de favorito" />
           </BotaoIcone>
           <BotaoIcone>
+            
             <img src="/icones/expandir.png" alt="icone de expandir" />
           </BotaoIcone>
+          
         </Rodape>
       </figcaption>
     </Figure>
