@@ -1,4 +1,5 @@
 import Titulo from "../../Titulo"
+import fotos from './fotos-populares.json'
 
 const Populares = () => {
     return <div style={{ minWidth: 212 }}>
