@@ -1,19 +1,19 @@
 [
     {
         "id": 0,
-        "titulo": "Todas"
+        "titulo": "All"
     },
     {
         "id": 1,
-        "titulo": "Estrelas"
+        "titulo": "Stars"
     },
     {
         "id": 2,
-        "titulo": "Galáxias"
+        "titulo": "Galaxies"
     },
     {
         "id": 3,
-        "titulo": "Luas"
+        "titulo": "Moons"
     },
     {
         "id": 4,

@@ -18,31 +18,31 @@ const BarraLateral = () => {
                         iconeInativo="/icones/home-inativo.png"
                         ativo={true}
                     >
-                        Início
+                        Start
                     </ItemNavegacao>
                     <ItemNavegacao 
                         iconeAtivo="/icones/mais-vistas-ativo.png" 
                         iconeInativo="/icones/mais-vistas-inativo.png"
                     >
-                        Mais vistas
+                        Most seem
                     </ItemNavegacao>
                     <ItemNavegacao 
                         iconeAtivo="/icones/mais-curtidas-ativo.png" 
                         iconeInativo="/icones/mais-curtidas-inativo.png"
                     >
-                        Mais curtidas
+                        Most liked
                     </ItemNavegacao>
                     <ItemNavegacao 
                         iconeAtivo="/icones/novas-ativo.png" 
                         iconeInativo="/icones/novas-inativo.png"
                     >
-                        Novas
+                        News
                     </ItemNavegacao>
                     <ItemNavegacao 
                         iconeAtivo="/icones/surpreenda-me-ativo.png" 
                         iconeInativo="/icones/surpreenda-me-inativo.png"
                     >
-                        Surpreenda-me
+                        Surprise me
                     </ItemNavegacao>
                 </ListaEstilizada>
             </nav>

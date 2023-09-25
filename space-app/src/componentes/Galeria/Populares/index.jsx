@@ -28,13 +28,13 @@ const Botao = styled.button`
 const Populares = () => {
   return (
     <section>
-      <Titulo $alinhamento="center">Populares</Titulo>
+      <Titulo $alinhamento="center">Populars</Titulo>
       <ColunaFotos>
         {fotos.map((foto) => (
           <Imagem key={foto.id} src={foto.path} alt={foto.alt} />
         ))}
       </ColunaFotos>
-      <Botao>Ver mais</Botao>
+      <Botao>See more</Botao>
     </section>
   );
 };

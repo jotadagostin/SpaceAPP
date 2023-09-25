@@ -26,7 +26,7 @@ const Galeria = ({ fotos = [], aoFotoSelecionada, aoAlternarFavorito }) => {
             <Tags />
             <GaleriaContainer>
                 <SecaoFluida>
-                    <Titulo>Navegue pela galeria</Titulo>
+                    <Titulo>Travel through the Gallery</Titulo>
                     <ImagensContainer>
                         {fotos.map(foto => <Imagem 
                             aoZoomSolicitado={aoFotoSelecionada}
